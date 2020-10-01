@@ -1,0 +1,6 @@
+% test
+
+# Show details with help of echo and fzf
+echo <names>
+
+$ names: fd . $HOME
