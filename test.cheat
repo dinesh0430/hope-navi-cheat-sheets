@@ -4,3 +4,14 @@
 echo <names>
 
 $ names: fd . $HOME
+
+# Even though "false/true" is displayed, this will print "0/1"
+echo <mapped>
+
+$ mapped: echo 'false true' | tr ' ' '\n' --- --map "[[ $0 == t* ]] && echo 1 || echo 0"
+
+# Should print /my/pictures/wallpapers
+echo "<wallpaper_folder>"
+
+$ pictures_folder: echo "/my/pictures"
+$ wallpaper_folder: echo "<pictures_folder>/wallpapers"
