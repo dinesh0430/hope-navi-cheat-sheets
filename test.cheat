@@ -21,8 +21,5 @@ $ wallpaper_folder: echo "<pictures_folder>/wallpapers"
 # If you select "hello" for <x>, the possible values of <y> will be "hello foo" and "hello bar"
 echo <x> <y>
 
-# If you want to ignore the contents of <x> and only print <y>
-: <x>; echo <y>
-
 $ x: echo "hello hi" | tr ' ' '\n'
 $ y: echo "$x foo;$x bar" | tr ';' '\n'
